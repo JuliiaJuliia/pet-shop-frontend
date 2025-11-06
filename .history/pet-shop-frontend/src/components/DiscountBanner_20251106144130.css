@@ -1,0 +1,101 @@
+.discount-banner {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    margin: 60px 80px;
+    padding: 60px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 🔹 Контейнер всередині */
+  .discount-banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* форма по центру вертикалі */
+    width: 100%;
+  }
+  
+  /* 🔹 Ліва частина (заголовок + фото) */
+  .discount-banner__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* 🔹 Текст по центру всього фону */
+  .discount-banner__left h2 {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0;
+    position: absolute;
+    top: 45%; /* 👈 центрально по вертикалі */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-transform: uppercase;
+  }
+  
+  /* 🔹 Фото тваринок — у самому низу */
+  .discount-banner__image {
+    width: 100%;
+    max-width: 650px; /* збільшено */
+    position: absolute;
+    bottom: -10px; /* “сидять” на межі */
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    z-index: 0;
+  }
+  
+  /* 🔹 Права частина — форма */
+  .discount-banner__form {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* по центру горизонталі */
+    align-items: center; /* по центру вертикалі */
+    z-index: 1;
+  }
+  
+  .discount-banner__form form {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .discount-banner__form input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .discount-banner__form button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .discount-banner__form button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🐾</text></svg>"), auto;
+  }

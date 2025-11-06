@@ -1,0 +1,104 @@
+.categories {
+    padding: 0px 80px 60px;
+    background-color: #fff;
+  }
+  
+  .categories__title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .categories__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .category-card {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='28'>🐾</text></svg>"), auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .category-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0;
+    transition: background 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card:hover .category-card__overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .categories__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .categories__header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    background-color: #fff;
+    padding-right: 15px;
+    z-index: 1;
+  }
+  
+  .categories__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+  .all-categories-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  
+  .all-categories-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: ##24973b91;;
+    cursor: url("/paw-cursor.png"), auto;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='28'>🐾</text></svg>"), auto;
+  }

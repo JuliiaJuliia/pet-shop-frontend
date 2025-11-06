@@ -1,0 +1,95 @@
+.discount-banner {
+    width: 100%;
+    background: linear-gradient(135deg, #045de9, #09c6f9);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 40px 0;
+  }
+  
+  .discount-banner__overlay {
+    background: rgba(0,0,0,0.25);
+    padding: 40px 20px;
+  }
+  
+  .discount-banner__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .discount-banner__left {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .discount-banner__left h2 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .discount-banner__left img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+
+  .discount-banner__right form {
+    flex: 1;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .discount-banner__right input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .discount-banner__right button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #045de9;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .discount-banner__right button:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  .discount-banner__success {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  /* Адаптивність для великих екранів */
+  @media (min-width: 768px) {
+    .discount-banner__container {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .discount-banner__left {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  
+    .discount-banner__right {
+      flex: 1;
+    }
+  }

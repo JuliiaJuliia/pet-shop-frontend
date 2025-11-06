@@ -1,0 +1,67 @@
+.sale-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53b955;
+    border-radius: 20px;
+    margin: 60px 80px;
+    padding: 80px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 🔹 Фото */
+  .sale-section__image img {
+    width: 480px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    transform: translateY(20px);
+  }
+  
+  /* 🔹 Контент */
+  .sale-section__content {
+    flex: 1;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .sale-section__title {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .sale-section__subtitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .sale-section__text {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 440px;
+  }
+  
+  .sale-section__button {
+    background: #fff;
+    color: #53b955;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 26px;
+    font-size: 18px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='28'>🐾</text></svg>"), auto;
+    transition: 0.3s ease;
+  }
+  
+  .sale-section__button:hover {
+    background: #3c933f;
+    color: #fff;
+  }

@@ -1,0 +1,127 @@
+/* контейнер банера */
+.discount-banner {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    margin: 60px 80px;
+    padding: 60px 80px 140px; /* зверни увагу: великий паддінг знизу для місця під тварин */
+    position: relative;
+    overflow: visible;
+    display: block;
+  }
+  
+  /* заголовок — по центру всього блоку (горизонтально + вертикально) */
+  .discount-banner__left h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.05;
+  }
+  
+  /* вміст під заголовком: картинка ліворуч, форма праворуч */
+  .discount-banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+  }
+  
+  /* ліва частина (картинка) */
+  .discount-banner__left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    /* картинка "сидить" внизу колонки */
+    position: relative;
+    padding-bottom: 10px;     /* трохи простору під картинкою */
+  }
+  
+  /* картинка тварин — збільшена і з позицією внизу (на межі фону) */
+  .discount-banner__image {
+    max-width: 720px;         /* збільшити розмір тварин */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -160px;
+  }
+  
+  /* права частина — форма (по центру вертикалі блоку) */
+  .discount-banner__form {
+    flex: 0 0 350px;
+    display: flex;
+    align-items: center;      /* вертикальне центрування форми всередині доступного простору */
+    justify-content: center;
+    z-index: 6;
+    position: relative;
+  }
+  
+  /* стилі самої форми */
+  .discount-banner__form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255,255,255,0.06); /* легке напівпрозоре тло, зливається з фоном */
+    padding: 18px;
+    border-radius: 10px;
+  }
+  
+  .discount-banner__form input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .discount-banner__form button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #007bff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* адаптация под мобильные екраны */
+  @media (max-width: 900px) {
+    .discount-banner {
+      margin: 30px 24px;
+      padding: 40px 24px 120px;
+    }
+    .discount-banner__left h2 {
+      font-size: 34px;
+      top: 42%;
+    }
+    .discount-banner__content {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+    }
+    .discount-banner__form {
+      width: 100%;
+      flex: none;
+      margin-top: 20px;
+    }
+    .discount-banner__image {
+      position: relative;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 320px;
+    }
+  }

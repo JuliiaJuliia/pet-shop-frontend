@@ -1,0 +1,62 @@
+.discount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+  }
+  
+  .discount__container {
+    width: 90%;
+    max-width: 1000px;
+    background: linear-gradient(135deg, #045de9, #09c6f9);
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .discount__text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .discount__text form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .discount__text input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .discount__text button {
+    padding: 14px;
+    margin-top: 10px;
+    background: #fff;
+    color: #045de9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .discount__image {
+    margin-top: 30px;
+  }
+  
+  .discount__image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .discount { border: 2px solid red; }
+.discount__container { border: 2px solid yellow; }

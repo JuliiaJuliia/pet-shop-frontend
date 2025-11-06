@@ -1,0 +1,40 @@
+<section className="discount-banner">
+
+  <h2 className="discount-banner__title">5% off on the first order</h2>
+
+  <div className="discount-banner__content">
+  <div className="discount-banner__left">
+      <img src="/Pets.jpg" alt="pets" className="discount-banner__image" />
+    </div>
+
+    <div className="discount-banner__form">
+      
+    </div>
+  </div>
+
+</section>
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+import "./DiscountBanner.css";
+
+function DiscountBanner = () => {
+  return (
+  
+
+        <h2>5% off on the first order</h2>
+        <form>
+        <input type="text" placeholder="Name" required />
+        <input type="phone" placeholder="Phone number" required />
+        <input type="email" placeholder="Email" required />
+        <button type="submit">Get Your Discount</button>
+        </form>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+  export default DiscountBanner;

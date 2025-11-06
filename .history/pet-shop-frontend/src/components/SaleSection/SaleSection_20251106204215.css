@@ -1,0 +1,135 @@
+.sale-section {
+    background-color: #fff;
+    margin: 60px 80px;
+    padding-bottom: 60px;
+  }
+  
+  /* 🔹 Заголовок + кнопка справа + лінія */
+  .sale-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .sale-section__header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    background-color: #fff;
+    padding-right: 15px;
+    z-index: 1;
+  }
+  
+  .sale-section__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+  /* 🔹 Кнопка “All categories” */
+  .sale-section__all-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #222;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  
+  .sale-section__all-btn:hover {
+    background-color: #53b955cd;
+    color: #fff;
+    border-color: #24973b91;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='28'>🐾</text></svg>"), auto;
+  }
+  
+  /* 🔹 Сетка товаров */
+  .sale-section__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  /* 🔹 Карточки товаров */
+  .sale-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 260px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='28'>🐾</text></svg>"), auto;
+  }
+  
+  .sale-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🔹 Фото + бейдж скидки */
+  .sale-card__image-container {
+    position: relative;
+  }
+  
+  .sale-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .sale-card__discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e53935;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  
+  /* 🔹 Інформація під фото */
+  .sale-card__details {
+        padding: 5px 8px 8px; /* 🔹 менший верхній відступ */
+        text-align: center;
+  }
+  
+  .sale-card__name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .sale-card__prices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .sale-card__old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .sale-card__new {
+    color: #53b955;
+    font-weight: 700;
+    font-size: 16px;
+  }

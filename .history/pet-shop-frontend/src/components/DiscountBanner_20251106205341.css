@@ -1,0 +1,48 @@
+.discount-banner {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #045de9, #09c6f9);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 40px 0;
+  min-height: 350px;
+}
+
+.discount-banner__overlay {
+  background: rgba(0,0,0,0.25);
+  padding: 40px 20px;
+}
+
+.discount-banner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* для позиціонування картинки */
+}
+
+.discount-banner__left {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.discount-banner__left h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 20px;
+  z-index: 2; /* заголовок поверх картинки */
+  position: relative;
+}
+
+/* Картинка поверх банера */
+.discount-banner__left img {
+  width: 100%;
+  max-width: 400px;
+  position: absolute; /* робимо абсолютною */
+  bottom: 0;          /* прижимаємо до низу банера */
+  left: 50%;          /* по центру */
+  transform: translateX(-50%); /* центруємо горизонтально */
+  z-index: 1;         /* під заголовком */
+}

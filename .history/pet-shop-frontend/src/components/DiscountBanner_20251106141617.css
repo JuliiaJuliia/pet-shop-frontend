@@ -1,0 +1,62 @@
+.discount-banner {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    margin: 60px 80px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .discount-banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .discount-banner__text h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .discount-banner__text p {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .discount-banner__text button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .discount-banner__text button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🐾</text></svg>"), auto;
+  }
+  
+  /* картинки животных */
+  .discount-banner__images {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .animals-banner {
+    max-height: 220px;
+    object-fit: contain;
+    opacity: 0.95;
+  }

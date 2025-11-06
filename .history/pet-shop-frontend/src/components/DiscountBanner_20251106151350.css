@@ -1,0 +1,15 @@
+/* заголовок — по центру всього блоку (горизонтально + вертикально) */
+.discount-banner__left h2 {
+    position: absolute;
+    top: 0px;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.05;
+  }

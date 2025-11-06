@@ -1,0 +1,77 @@
+.contact {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .contact__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .contact__column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contact__item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #045de9;
+  }
+  
+  .contact__item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .contact__item a:hover {
+    color: #053c9e;
+  }
+  
+  .contact__item p {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .contact__socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .contact__icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact__icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .contact__map iframe {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .contact__info-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }

@@ -1,0 +1,96 @@
+.discount-banner {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    margin: 60px 80px;
+    padding: 60px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🔹 Контейнер із текстом + формою */
+  .discount-banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* 🔹 Ліва частина (заголовок + фото) */
+  .discount-banner__left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 🔹 Заголовок тепер зверху по центру */
+  .discount-banner__left h2 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* 🔹 Фото тварин — знизу */
+  .discount-banner__image {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  
+  /* 🔹 Форма — справа, посередині вертикально */
+  .discount-banner__form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* центр вертикалі */
+    z-index: 3;
+  }
+  
+  .discount-banner__form form {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .discount-banner__form input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .discount-banner__form button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .discount-banner__form button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🐾</text></svg>"), auto;
+  }
