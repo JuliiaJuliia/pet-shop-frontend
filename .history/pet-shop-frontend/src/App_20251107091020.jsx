@@ -2,6 +2,8 @@ import React from "react";
 import MainBanner from "./components/MainBanner";
 import DiscountForm from "./components/DiscountForm";
 import ProductList from "./components/ProductList";
+import Contact from "./components/Contact";
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
         </h2>
         <ProductList />
       </section>
+      <Contact />
     </div>
   );
 }

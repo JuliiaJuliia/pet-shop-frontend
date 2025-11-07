@@ -2,6 +2,9 @@ import React from "react";
 import MainBanner from "./components/MainBanner";
 import DiscountForm from "./components/DiscountForm";
 import ProductList from "./components/ProductList";
+import Contact from "./components/Contact";
+
+
 
 function App() {
   return (
@@ -33,6 +36,14 @@ function App() {
         </h2>
         <ProductList />
       </section>
+
+      <section style={{ marginTop: "50px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
+        Our Products
+        </h2>
+        <ProductList />
+        </section>
+        <Contact />
     </div>
   );
 }

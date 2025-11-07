@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       {/* Заголовок магазину */}
-      <h1 style={{ textAlign: "center", marginTop: "20px" }}>
+      <h1 style={{ textAlign: "center" marginTop: "20px" }}>
         Pet Shop 🐾
       </h1>
 
